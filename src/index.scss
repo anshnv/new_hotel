@@ -1,0 +1,32 @@
+.body__h{
+	color:blue;
+	font-size:40px;
+	font-weight:bold;
+}
+/* Import your theme variables
+@import "my-theme";*/
+
+/* Import MDC Web components*/
+/*@import "@material/typography/mdc-typography";
+@import "@material/button/mdc-button";*/
+
+/* Import your components for your application
+@import "my-components"; */
+
+/*@import 'pages/page';*/
+
+.pageHear{
+	height:1.4925373134rem;
+	color: #00ffff ;
+}
+/* .padVect{
+	padding-top:1.6rem;
+	padding-left:0.4rem;
+}
+.padBotVect{
+	padding-bottom:1.8rem;
+	
+} */
+@import 'pages/UlKit/page0';
+@import 'pages/UlKit/formElements';
+/* @import 'pages/page'; */
