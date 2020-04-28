@@ -1,5 +1,6 @@
 input:focus{
 	outline:none;/*Отменяет обрамление при наведении фокуса*/
+	color:$DarkShade75;
 }
 input{
 	height:$FieldTextHeight; /* высота */

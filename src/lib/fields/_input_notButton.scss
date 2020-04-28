@@ -6,9 +6,10 @@ input[name="notButton"]{
 }
 input[name="notButton"]:hover {
 	border:1px solid $DarkShade50;
-	
+	color:$DarkShade75;
 }
 input[name="notButton"]:focus {
 	border:1px solid $DarkShade50;
+	color:$DarkShade75;
 	
 }
