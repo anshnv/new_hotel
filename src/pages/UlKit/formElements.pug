@@ -7,6 +7,7 @@
 	.formElements_pad-left
 		.formElements__simplElements
 			.formElements__simplElements__fields
+				<!-- Текстовое поле начало -->
 				.formElements__simplElements__field.formElements__simplElements__field__margin_bot
 					include ../../lib/fields/_field__text_text
 					include ../../lib/fields/_Field_text
@@ -16,9 +17,14 @@
 					+field__text('Text Field', 'Hover / Focus')
 					include ../../lib/fields/_mixField
 					+Field('text', 'notButton', 'This is pretty awesome')
+				<!-- Текстовое поле конец -->
+				<!-- Поле Dropdown начало -->
 				.formElements__simplElements__field.formElements__simplElements__field__margin_bot
-					include ../../lib/fields/_field__text_text
-					include ../../lib/fields/_Field_text
+					include ../../lib/fields/_mixField__text
+					+field__text('Dropdown', 'defalt')
+					include ../../lib/fields/_mixField
+					+Field('text', 'notButton', 'Сколько гостей')
+				<!-- Поле Dropdown конец -->
 				.formElements__simplElements__field.formElements__simplElements__field__margin_bot
 					include ../../lib/fields/_field__text_text
 					include ../../lib/fields/_Field_text
