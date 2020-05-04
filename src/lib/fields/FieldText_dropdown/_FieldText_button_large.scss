@@ -1,7 +1,7 @@
 @import './lib/_var';
 @import './lib/_fonts';
 input[name="Field_button_large"]{
-	width:$FieldLarge-buttonWidth;
+	width:$Input_WithBottonBig;
 	box-sizing:border-box;
 	height:$Field-buttonHeight;
 	margin-top:1px;

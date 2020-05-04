@@ -1,6 +1,6 @@
 @import './lib/_var';
 /*@import '../_Input';*/
-button[name="Button_fields"]{
+button[name="field__button"]{
 	height:$Button_field_size; /* высота на свое усмотрение*/
 	width:$Button_field_size; /*ширина на свое усмотрение*/
 	color:$DarkShade25; /*цвет шрифта в обычном состоянии*/
@@ -10,14 +10,14 @@ button[name="Button_fields"]{
 	box-sizing:border-box;
 	border-radius:0rem $Border-radius $Border-radius 0rem;
 }
-/*.red{
-	padding-top: 20rem;
-	background-color: red;
+.red{
+	/* padding-top: 20rem; */
+	/* background-color: red; */
 }
 button[type="button"]:hover{
-	border: 1px solid $DarkShade50;
+	/* border: 1px solid $DarkShade50; */
 	color: $DarkShade25;
-}*/
+}
 button[type="button"]:focus{
 	/*color: $DarkShade25;
 	border: 1px solid $DarkShade50;*/
