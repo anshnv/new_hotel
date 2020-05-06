@@ -30,10 +30,15 @@
 					include ../../lib/fields/field-text_masked/_field-text__text_masked
 					include ../../lib/fields/field-text_masked/_field-text_masked
 					<!-- Поле Masked конец -->
-				.formElements__simplElements__field.formElements__simplElements__field__margin_bot
-					include ../../lib/fields/_field__text_text
-					include ../../lib/fields/_Field_text
-					
+					<!-- Поле date Dropdown начало -->
+				.formElements__simplElements__field_date
+					.formElements__simplElements__field.formElements__simplElements__field__margin_bot
+						+field__text('date Dropdown', '')
+						include ../../lib/fields/field-text_date/_field-text_date
+					.formElements__simplElements__field.formElements__simplElements__field__margin_bot
+						+field__text('date Dropdown', '')
+						include ../../lib/fields/field-text_date/_field-text_date
+					<!-- Поле date Dropdown конец -->
 				.formElements__simplElements__field.formElements__simplElements__field__margin_bot
 					include ../../lib/fields/_field__text_text
 					include ../../lib/fields/_Field_text

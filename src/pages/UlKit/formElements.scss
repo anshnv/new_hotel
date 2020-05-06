@@ -11,6 +11,7 @@
 @import '../../lib/fields/_field__text_dropdownG';
 @import '../../lib/fields/FieldText_dropdown/_FieldText_dropdown';
 @import '../../lib/fields/field-text_masked/field-text_masked';
+@import '../../lib/fields/field-text_date/_field-text_date';
 
 
 .formElements{
@@ -84,7 +85,13 @@
 		margin-bottom:0.8rem;
 	}
 	}
-
+	/*Field data*/
+.formElements__simplElements__field_date{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	width:auto;
+}
 .formElements__dropdowns{
 	display:flex;
 	flex-direction:row;

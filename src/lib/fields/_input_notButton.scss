@@ -1,7 +1,7 @@
 @import './lib/_var';
 @import './lib/fields/_Input';
 input[name="notButton"]{
-	width:$Input_WidthNotBotton;
+	width:$Input_WidthNotBotton_width;
 	border-radius:$Border-radius;
 }
 input[name="notButton"]:hover {

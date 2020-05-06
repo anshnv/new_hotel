@@ -1,0 +1,56 @@
+@import './lib/fields/_Input_WithBottonShort';
+@import './lib/fields/_mixField';
+@import './lib/fields/_var_field-sizes';
+@import '_mix-field-text_with-button.scss';
+
+
+input[type="date"]{
+	text-transform:uppercase;
+	color:$DarkShade50;
+	font-family:'Montserrat';
+	width:$Input_WithBottonShort_width;
+}
+/*Отменяется стандартные кнопки и убирает календарь у input data
+::-webkit-datetime-edit — поле даты
+::-webkit-datetime-edit-fields-wrapper — текст всей даты
+::-webkit-datetime-edit-text - разделители
+::-webkit-datetime-edit-month-field — текст месяца
+::-webkit-datetime-edit-day-field — текст дня
+::-webkit-datetime-edit-year-field — текст года
+::-webkit-inner-spin-button — дойные стрелки (листают дату)
+::-webkit-calendar-picker-indicator — кнопка, открывающая календарь
+::-webkit-clear-button { display: none; } кнопка сброса
+
+*/
+
+/*Отменяем кнопку листания даты*/
+input::-webkit-inner-spin-button{
+	display:none;
+}
+/*Отменяем  кнопку сброса*/
+input::-webkit-clear-button{
+	display:none;
+}
+/*Делаем прозрачной кнопку, открывающую календарь*/
+input::-webkit-calendar-picker-indicator{ 
+	opacity:0;
+}
+/*Отменяем фон полей при фокусе*/
+input::-webkit-datetime-edit-day-field:hover{
+	background:$PageBackground;
+	color:$DarkShade50;}
+	input::-webkit-datetime-edit-day-field:focus{
+	background:$PageBackground;
+	color:$DarkShade50;}
+	input::-webkit-datetime-edit-month-field:hover{
+	background:$PageBackground;
+	color:$DarkShade50;}
+	input::-webkit-datetime-edit-month-field:focus{
+	background:$PageBackground;
+	color:$DarkShade50;}
+	input::-webkit-datetime-edit-year-field:hover{
+	background:$PageBackground;
+	color:$DarkShade50;}
+	input::-webkit-datetime-edit-year-field:focus{
+	background:$PageBackground;
+	color:$DarkShade50;}

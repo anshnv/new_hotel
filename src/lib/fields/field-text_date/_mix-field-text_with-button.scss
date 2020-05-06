@@ -1,0 +1,45 @@
+@import '_field__button';
+
+.field-text__layout{
+	display:flex;
+	flex-direction:row;
+	/*background: grey;*/
+	/* width:$FieldTextWidth; */
+	height:$FieldTextHeight;
+	/*box-sizing:border-box;*/
+	border-radius:$Border-radius;
+	border:1px solid $DarkShade25;
+}
+.field-text__layout:hover{
+	border-radius:$Border-radius $Border-radius 0rem 0rem;
+}
+
+.field-date__button__layout{
+	position:relative;
+	/*background:green;*/
+}
+.input-date{
+	position:relative;
+	z-index:5;
+}
+input::-webkit-calendar-picker-indicator{
+	position:relative;
+	z-index:5;
+	 top:-1.2rem; 
+}
+.field-date__expand_more{
+	position:relative;
+	z-index:4;
+	left:5.8rem;
+	top:-1.6rem;
+	background:green;
+}
+.field-date__button{
+	position:relative;
+	z-index:1;
+	top:-3.2rem;
+	left:3.9rem;
+	background:blue;
+}
+
+

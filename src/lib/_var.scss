@@ -11,18 +11,20 @@ $Green:#6FCF97;
 /*элементы управления*/
 $SheetWidth:72rem;
 $FieldTextHeight:2.1rem;
-$FieldTextHeightContent:10rem;
+/* $FieldTextHeightContent:10rem;
 $FieldTextHeightContentLine:2.5rem;
-$FieldTextWidthContent:16.0rem;
-$Input_WidthNotBotton:16.0rem;
+$FieldTextWidthContent:16.0rem; */
+$Input_WidthNotBotton_width:16.0rem;
 $Button_field_size:1.8rem;
-$Field-buttonHeight:1.8rem;
+$Field-buttonHeight:$Button_field_size;
 
-$Input_WithBottonBig:13.8rem;
-$Input_WithBottonShort:5.32rem;
-$FieldLarge-buttonWidth:13.8rem;/*Input_WithBottonBig*/
-$FieldMiddle-buttonWidth:11.1rem;/*Input_WithBottonMiddle*/
-$FieldSmall-buttonWidth:5.32rem;/*Input_WithBottonShort*/
+$Input_WithBottonBig_width:13.8rem;
+$Input_WithBottonMiddle_width:11.1rem;
+$Input_WithBottonShort_width:5.32rem;
+
+$FieldLarge-buttonWidth:$Input_WithBottonBig_width;/*Input_WithBottonBig*/
+$FieldMiddle-buttonWidth:$Input_WithBottonMiddle_width;/*Input_WithBottonMiddle*/
+$FieldSmall-buttonWidth:$Input_WithBottonShort_width;/*Input_WithBottonShort*/
 $Border-radius:0.3rem;
 
 
