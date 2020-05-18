@@ -1,6 +1,6 @@
-@import './lib/_var';
+@import '../_var_field-sizes';
 @import './lib/_fonts';
-input[name="Field_button_large"]{
+input[name="WithBottonBig"]{
 	width:$Input_WithBottonBig_width;
 	box-sizing:border-box;
 	height:$Field-buttonHeight;
