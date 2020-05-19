@@ -1,7 +1,8 @@
-@import './lib/fields/_Input_WithBottonShort';
-@import './lib/fields/_mixField';
+/* @import '_Input_WithBottonShort'; */
+@import '_mixField-date__text';
 @import './lib/fields/_var_field-sizes';
-@import '_mix-field-text_with-button.scss';
+/* @import '../_var_field-sizes'; */
+/* @import '_mix-field-date_with-button'; */
 
 
 input[type="date"]{
@@ -32,9 +33,9 @@ input::-webkit-clear-button{
 	display:none;
 }
 /*Делаем прозрачной кнопку, открывающую календарь*/
-input::-webkit-calendar-picker-indicator{ 
-	opacity:0;
-}
+/* input::-webkit-calendar-picker-indicator{ 
+	opacity:1;
+} */
 /*Отменяем фон полей при фокусе*/
 input::-webkit-datetime-edit-day-field:hover{
 	background:$PageBackground;

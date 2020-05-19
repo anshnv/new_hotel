@@ -1,14 +1,13 @@
-@import './lib/_var';
+@import '../_var_field-sizes';
 @import './lib/_styleText';
 
-.layoutText{
+.layoutText_data{
 	display:flex;
 	flex-direction:row;
 	flex-wrap:nowrap;
 	justify-content:space-between;
-	width:$Input_WidthNotBotton_width;
+	width:$Input_WithBottonShort_width;
 }
-
 .Text_fields_def50{
 	color:$DarkShade50;
 	text-transform:uppercase;
