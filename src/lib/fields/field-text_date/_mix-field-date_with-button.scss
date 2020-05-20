@@ -4,12 +4,11 @@
 .field-date__layout{
 	display:flex;
 	flex-direction:row;
-	background: grey;
+	/* background: grey; */
 	width:$Input_WithBottonShort_width;
 	height:$FieldTextHeight;
 	box-sizing:border-box;
 	border-radius:$Border-radius;
-	border:1px solid $DarkShade25;
 }
 .field-date__layout:hover{
 	border-radius:$Border-radius $Border-radius 0rem 0rem;
