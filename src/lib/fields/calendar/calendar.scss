@@ -1,0 +1,35 @@
+@import '../_var_field-sizes';
+@import '../_Input';
+
+.field-calendar__layout{
+	display:flex;
+	flex-direction:row;
+	background: green;
+	width:$Input_WithBottonMiddle_width;
+	box-sizing:border-box;
+	border-radius:$Border-radius;
+	
+	}
+	
+	.input-calendar{
+	display:flex;
+	position:relative;
+	z-index:5;
+	opacity:1;
+	width:$Input_WithBottonMiddle_width;
+	border-radius:$Border-radius 0 0 $Border-radius;
+	/* display:none; */
+}
+
+.field-calendar__expand_more{
+	display:flex;
+	position:relative;
+	z-index:0;
+	left:1.5rem;
+	top:0.1rem;
+	background:blue;
+	border-radius:0 $Border-radius $Border-radius 0 ;
+	width:1.9rem;
+	height:1.9rem;
+	/* display:none; */
+}

@@ -20,3 +20,5 @@ import './index.scss';
 import './lib/fields/item-quantity-dropdownRoom/item-quantity-dropdownRoom.js';
 import './lib/fields/item-quantity-dropdownGuest/item-quantity-dropdownGuest.js';
 
+import './lib/fields/calendar/calendar.js';
+;
