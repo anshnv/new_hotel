@@ -39,7 +39,7 @@
 	}
 	
 .iqdropdown-selection{
-	height:$FieldTextHeight !important;
+	height:$FieldTextHeight;
 	width:$FieldTextWidthR !important;
 	font-family:'Montserrat' !important;
 	font-size:0.7rem !important;

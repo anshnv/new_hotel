@@ -23,6 +23,14 @@ input[type="date"]{
 ::-webkit-calendar-picker-indicator — кнопка, открывающая календарь
 ::-webkit-clear-button { display: none; } кнопка сброса
 
+input#myInput::-webkit-calendar-picker-indicator { display: none }
+
+input[type=date]::-webkit-inner-spin-button, 
+input[type=date]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
 */
 
 /*Отменяем кнопку листания даты*/

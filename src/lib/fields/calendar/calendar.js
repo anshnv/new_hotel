@@ -9,14 +9,14 @@ $(function(){
 		minDate: date
 	}); 
 });
-$(function(){
- $('#my-calendar').datepicker({
-    // Можно выбрать тольо даты, идущие за сегодняшним днем, включая сегодня
+//$(function(){
+ //$('#my-calendar').datepicker({
+    // Можно выбрать только даты, идущие за сегодняшним днем, включая сегодня
      // minDate: new Date()
      // startDate: new Date()
 
-})
-})
+//})
+//})
 
 $(function(){
  $('#my-calendar')._clearDate(this)})

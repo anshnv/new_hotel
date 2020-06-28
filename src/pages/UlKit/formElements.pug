@@ -1,83 +1,86 @@
 
 .formElements
-	.formElements__pageIcon_pad
-		//embed(src='img/vectorBase.svg' alt='text' height="48" width="48")
-		embed(src='img/vector.svg' alt='text' height="96" width="96")
-	
-	.formElements_pad-left
-		.formElements__simplElements
-			.formElements__simplElements__fields
-				<!-- Текстовое поле начало -->
-				.formElements__simplElements__field.formElements__simplElements__field__margin_bot
-					include ../../lib/fields/_field__text_text
-					include ../../lib/fields/_Field_text
-					
-				.formElements__simplElements__field.formElements__simplElements__field__margin_bot
-					include ../../lib/fields/_mixField__text
-					+field__text('Text Field', 'Hover / Focus')
-					include ../../lib/fields/_mixField
-					+Field('text', 'notButton', 'This is pretty awesome')
-				<!-- Текстовое поле конец -->
-				<!-- Поле Dropdown начало -->
-				
-				
-				.formElements__simplElements__field.formElements__simplElements__field__margin_bot
-					include ../../lib/fields/_mixField__text
-					+field__text('Dropdown', 'defalt')
-					include ../../lib/fields/FieldText_dropdown/_FieldText_dropdown
-					<!-- +Field('text', 'notButton', 'Сколько гостей') -->
-				<!-- Поле Dropdown конец -->
-				<!-- Поле Masked начало -->
-				.formElements__simplElements__field.formElements__simplElements__field__margin_bot
-					include ../../lib/fields/field-text_masked/_field-text__text_masked
-					include ../../lib/fields/field-text_masked/_field-text_masked
-					<!-- Поле Masked конец -->
-				<!-- Поле date Dropdown начало -->
-				.formElements__simplElements__field_date
-					.formElements__simplElements__field.formElements__simplElements__field__margin_bot
-						include ../../lib/fields/field-text_date/_mixField-date__text
-						+field-date__text('date Dropdown', '')
-						
-						include ../../lib/fields/field-text_date/_field-text_date
-					.formElements__simplElements__field.formElements__simplElements__field__margin_bot
-						include ../../lib/fields/field-text_date/_mixField-date__text
-						+field-date__text('date Dropdown', '')
-						
-						include ../../lib/fields/field-text_date/_field-text_date
-					
-					
-					<!-- Поле date Dropdown конец -->
-					
-				<!-- Поле Calendar начало -->
-				.formElements__simplElements__field.formElements__simplElements__field__margin_bot
-					include ../../lib/fields/_mixField__text
-					+field__text('filter date dropdown', '')
-					include ../../lib/fields/calendar/calendar.pug
-					
-					<!-- Поле Calendar конец -->
-				.formElements__simplElements__field.formElements__simplElements__field__margin_bot
-					include ../../lib/fields/_field__text_text
-					include ../../lib/fields/_Field_text
-			.formElements__simplElements__complexButtons
-				p complexButtons
-			.formElements__simplElements__buttonsAnd
-				p buttonsAnd
-		.formElements__dropdowns
-			.formElements__dropdown
-				.field__text_dropdownR_s
-					include ../../lib/fields/_field__text_dropdownR
-				.formElements__dropdowns_R__magR
-					include ../../lib/fields/item-quantity-dropdownRoom/item-quantity-dropdownRoom
-			
-			.formElements__dropdown
-				.field__text_dropdownG_s
-					include ../../lib/fields/_field__text_dropdownG
-				include ../../lib/fields/item-quantity-dropdownGuest/item-quantity-dropdownGuest
-			.formElements__dropdown
-				.field__text_dropdownG_s
-					include ../../lib/fields/_field__text_dropdownG
-				include ../../lib/fields/item-quantity-dropdownGuest/item-quantity-dropdownGuest
-		.formElements__lists
-			p lists
-		.formElements__elementsIcon
-			p elementsIcon
+  .formElements__pageIcon_pad
+    //embed(src='img/vectorBase.svg' alt='text' height="48" width="48")
+    embed(src='img/vector.svg' alt='text' height="96" width="96")
+  
+  .formElements_pad-left
+    .formElements__simplElements
+      .formElements__simplElements__fields
+        <!-- Текстовое поле начало -->
+        .formElements__simplElements__field.formElements__simplElements__field__margin_bot
+          include ../../lib/fields/_field__text_text
+          include ../../lib/fields/_Field_text
+          
+        .formElements__simplElements__field.formElements__simplElements__field__margin_bot
+          include ../../lib/fields/_mixField__text
+          +field__text('Text Field', 'Hover / Focus')
+          include ../../lib/fields/_mixField
+          +Field('text', 'notButton', 'This is pretty awesome')
+        <!-- Текстовое поле конец -->
+        <!-- Поле Dropdown начало -->
+        
+        
+        .formElements__simplElements__field.formElements__simplElements__field__margin_bot
+          include ../../lib/fields/_mixField__text
+          +field__text('Dropdown', 'defalt')
+          include ../../lib/fields/FieldText_dropdown/_FieldText_dropdown
+          <!-- +Field('text', 'notButton', 'Сколько гостей') -->
+        <!-- Поле Dropdown конец -->
+        <!-- Поле Masked начало -->
+        .formElements__simplElements__field.formElements__simplElements__field__margin_bot
+          include ../../lib/fields/field-text_masked/_field-text__text_masked
+          include ../../lib/fields/field-text_masked/_field-text_masked
+          <!-- Поле Masked конец -->
+        <!-- Поле date Dropdown начало -->
+        .formElements__simplElements__field_date
+          .formElements__simplElements__field.formElements__simplElements__field__margin_bot
+            include ../../lib/fields/field-text_date/_mixField-date__text
+            +field-date__text('date Dropdown', '')
+            
+            include ../../lib/fields/field-text_date/_field-text_date
+          .formElements__simplElements__field.formElements__simplElements__field__margin_bot
+            include ../../lib/fields/field-text_date/_mixField-date__text
+            +field-date__text('date Dropdown', '')
+            
+            include ../../lib/fields/field-text_date/_field-text_date
+          
+          
+          <!-- Поле date Dropdown конец -->
+          
+        <!-- Поле Calendar начало -->
+        .formElements__simplElements__field.formElements__simplElements__field__margin_bot
+          include ../../lib/fields/_mixField__text
+          +field__text('filter date dropdown', '')
+          include ../../lib/fields/calendar/calendar.pug
+          
+          <!-- Поле Calendar конец -->
+        .formElements__simplElements__field.formElements__simplElements__field__margin_bot
+          
+          +field__text('subscription text field', '')
+          <!-- include ../../lib/fields/_FieldText_button_middle -->
+          +Field('text', '_Feild_button_middle', 'Email')
+          
+      .formElements__simplElements__complexButtons
+        p complexButtons
+      .formElements__simplElements__buttonsAnd
+        p buttonsAnd
+    .formElements__dropdowns
+      .formElements__dropdown
+        .field__text_dropdownR_s
+          include ../../lib/fields/_field__text_dropdownR
+        .formElements__dropdowns_R__magR
+          include ../../lib/fields/item-quantity-dropdownRoom/item-quantity-dropdownRoom
+      
+      .formElements__dropdown
+        .field__text_dropdownG_s
+          include ../../lib/fields/_field__text_dropdownG
+        include ../../lib/fields/item-quantity-dropdownGuest/item-quantity-dropdownGuest
+      .formElements__dropdown
+        .field__text_dropdownG_s
+          include ../../lib/fields/_field__text_dropdownG
+        include ../../lib/fields/item-quantity-dropdownGuest/item-quantity-dropdownGuest
+    .formElements__lists
+      p lists
+    .formElements__elementsIcon
+      p elementsIcon
