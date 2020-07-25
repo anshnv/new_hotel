@@ -1,27 +1,8 @@
-/*PerfectPixel: 8 968 */
-@import '../../lib/var';
-@import '../../lib/styleText';
-@import '../../lib/fonts';
-@import '../../lib/fields/_Field_text';
-@import '../../lib/fields/_field__text_text';
-@import '../_mixPageIconPad';
-@import '../../lib/fields/item-quantity-dropdownGuest/item-quantity-dropdownGuest';
-@import '../../lib/fields/item-quantity-dropdownRoom/item-quantity-dropdownRoom';
-@import '../../lib/fields/_field__text_dropdownR';
-@import '../../lib/fields/_field__text_dropdownG';
-@import '../../lib/fields/FieldText_dropdown/_FieldText_dropdown';
-@import '../../lib/fields/field-text_masked/field-text_masked';
-@import '../../lib/fields/field-text_date/_field-text_date';
-@import '../../lib/fields/field-text_date/_mixField-date__text';
-@import '../../lib/fields/field-text_date/_mix-field-date_with-button';
-@import '../../lib/fields/calendar/calendar';
-@import '../../lib/fields/_FieldText_button_middle';
-
-/*Новые input*/
-@import '../_page-var';
-
-
-/*Конец Новые input*/
+@import './pages/_page-var';
+@import './pages/input/_input-var_sizes';
+@import './pages/input/input';
+/* @import './lib/input/__button/mix-input_with-button__button'; */
+@import './pages/input/input_dropdown/input_dropdown';
 
 .formElements{
   display:flex;
@@ -29,8 +10,8 @@
   justify-content:flex-start;
   background:yellow;/*$PageBackground;*/
   width:$SheetWidth;
-  max-width:1920 px;
-  min-width:320 px;
+  max-width:1920px;
+  min-width:320px;
 }
 .formElements_pad-left{
   padding-left:7.1rem;
@@ -44,6 +25,7 @@
     flex-direction:row;
     justify-content:space-between;
     background:green;
+    
   }
   &__dropdowns{
     background:red;
@@ -68,24 +50,24 @@
   }
 
 }
-.formElements__simplElements__fields{
+.formElements__simplElements__inputs{
   display:flex;
   flex-direction:column;
   justify-content:flex-start;
   
   background:$PageBackground;
-  width:auto;
+  width:Input_Size_Width;
 }
-.formElements__simplElements__fields_pad{
+.formElements__simplElements__inputs_pad{
   pad-bottom:3rem;
 }
-.formElements__simplElements__field{
+.formElements__simplElements__input{
   display:flex;
   flex-direction:column;
   justify-content:flex-start;
-  width:auto;
+  width:Input_Size_Width;
 }
-.formElements__simplElements__field{
+.formElements__simplElements__input{
   &__input{
     background:grey;
   }
@@ -97,14 +79,17 @@
   }
   }
   /*Field data*/
-.formElements__simplElements__field_date{
+.formElements__simplElements__input_date{
   display:flex;
   flex-direction:row;
   justify-content:space-between;
   width:$Input_WidthNotBotton_width;
   /* background:grey; */
 }
+/*Новые input*/
 
+
+/*Конец Новые input*/
 .formElements__dropdowns{
   display:flex;
   flex-direction:row;
@@ -123,3 +108,4 @@
 .formElements__dropdowns_R__magR{
   margin-right:5.3rem;
 }
+

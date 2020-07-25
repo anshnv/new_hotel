@@ -1,8 +1,8 @@
-@import '../_var_field-sizes';
-@import '../_Input';
+@import '../_input-var_sizes.scss;
+@import '../_input.scss';
 
 .field-calendar__layout{
-  /* display:flex; */
+  display:flex;
   flex-direction:row;
   /* background: green; */
   width:$Input_WithBottonMiddle_width;
@@ -21,12 +21,12 @@
   display:flex;
   position:relative;
   z-index:0;
-/*   left:-1.6rem;
-  top:0.6rem; */
-  background:blue;
+  left:-1.6rem;
+  top:0.6rem;
+  /* background:blue; */
   border-radius:0 $Border-radius $Border-radius 0 ;
-  /* width:100%  ;
-  height:100%; */
+  width:1.0rem;
+  height:1.0rem;
   /* display:none; */
 }
 /* Оформление air-datepicker */

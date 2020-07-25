@@ -1,0 +1,17 @@
+@import '../_input-var_sizes';
+@import '../input';
+@import './lib/input/_with-button/_mix-input_with-button';
+
+input[name='with-button']{
+  width:$Input_Size_Width;
+  /* background:yellow; */
+}
+.input_with-button__layout{
+  width:$Input_Size_Width;
+}
+.input_with-button{
+  width:$Input_Size_Width;
+}
+/* .input__icon{
+  height:1.3rem;
+} */

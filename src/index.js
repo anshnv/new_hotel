@@ -1,10 +1,13 @@
 // JS - 
 //import './js/';
 //import './pages/page.js';
+import './pages/UlKit/form-elements/form-elements.js';
+import './lib/input/__button/mix-input_with-button__button.js';
+
 import $ from 'jquery';
 global.jQuery = $;
 global.$ = $;
-//global.jQuery = global.$ = $;
+global.jQuery = global.$ = $;
 window.$ = window.jQuery = $;
 import 'jquery/dist/jquery.min.js'
 
@@ -22,3 +25,18 @@ import './lib/fields/item-quantity-dropdownGuest/item-quantity-dropdownGuest.js'
 
 import './lib/fields/calendar/calendar.js';
 ;
+// Узнаем размер шрифта браузера
+/* Для свойств, названия которых состоят из нескольких слов, используется вотТакаяЗапись:
+- background-color => backgroundColor
+- z-index => zIndex
+- border-left-width => borderLeftWidth
+
+Например:
+- element.zIndex = 10000; 
+Изменить размер
+el.style.fontSize = (fontSize + 1) + 'px';*/
+onload = function testFontSize ()
+{
+
+console.log (getComputedStyle(document.body, '').fontSize);
+}

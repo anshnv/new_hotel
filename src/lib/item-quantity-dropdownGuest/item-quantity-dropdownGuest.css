@@ -1,0 +1,52 @@
+@import 'item-quantity-dropdownG';
+
+.iqdropdown-layout-CleaMake{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	padding-top:1.0rem;
+	padding-bottom:0.5rem;
+}
+.iqdropdownGuest-textClean{
+	/* padding:1.1rem 5.7rem  0.82rem 0.8rem !important; */
+	color:$DarkShade05;
+	
+}
+.iqdropdownGuest-textMake{
+	 padding-right:0.3rem !important; 
+}
+
+button{
+	font-family:'Montserrat-Bold';
+	font-size:0.6rem;
+	font-weight:normal;
+	color:$DarkShade25;
+	/*margin:auto !important;
+	padding:0.95rem 4.1rem  0.2rem 0.8rem !important;*/
+}
+.iqdropdown {
+	.iqdropdown-menu {
+		&-clean {
+			font-family:'Montserrat' !important;
+			font-size:0.6rem !important;
+			color:$DarkShade50 !important;
+			/*height:$iqdropdown-close-size;*/
+			margin:20px 10px !important;
+			padding:0.95rem 4.1rem  0.2rem 0.8rem !important;
+			text-align:right !important; /*left;*/
+			width:100%;
+}
+		&-option {
+      /* @include last-child('border');
+      align-items: center;
+      display: flex;*/
+			height: $iqdropdown-menu-heightMy !important;
+			padding: 0 0.0rem !important;
+		}
+	}
+	}
+
+
+
+
+

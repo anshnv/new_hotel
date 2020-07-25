@@ -1,0 +1,41 @@
+.formElements
+  .formElements__pageIcon_pad
+    //embed(src='img/vectorBase.svg' alt='text' height="48" width="48")
+    embed(src='img/vector.svg' alt='text' height="96" width="96")
+  
+  .formElements_pad-left
+    .formElements__simplElements
+
+      .formElements__simplElements__inputs
+        <!-- Текстовое поле начало -->
+        .formElements__simplElements__input.formElements__simplElements__input__margin_bot
+          include ../../input/input_text/input__text_text
+          include ../../input/input_text/input_text
+          
+        .formElements__simplElements__field.formElements__simplElements__field__margin_bot
+          include ../../input/input_text/input__text_text_focused
+          include ../../input/input_text/input_text_focused
+          
+          
+        <!-- Текстовое поле конец -->
+        <!-- dropdowns начало -->
+        .formElements__simplElements__input.formElements__simplElements__input__margin_bot
+          include ../../input/input_dropdown/input__text_dropdown
+          include ../../input/input_dropdown/input_dropdown
+          <!-- Проба -->
+
+          
+          
+        <!-- dropdowns конец -->
+        
+        
+      .formElements__simplElements__complexButtons
+        p complexButtons
+      .formElements__simplElements__buttonsAnd
+        p buttonsAnd
+    .formElements__dropdowns
+      p dropdowns
+    .formElements__lists
+      p lists
+    .formElements__elementsIcon
+      p elementsIcon

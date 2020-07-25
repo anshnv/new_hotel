@@ -1,15 +1,20 @@
+html{font-size:20px;}
 
+@media (min-width:1224px){font-size:100%;}
+@media (max-device-width:320px){font-size:60%;}
 .html_base{
 font-family:Montserrat;
-/* font-color:; */
-font-size:20px;
+/* font-color:;
+font-size:100%; */
+
 }
 .pageHear{
-	color:blue;
-	font-size:1rem;
-	font-weight:bold;
+  color:blue;
+  font-size:1rem;
+  font-weight:bold;
 }
 
 @import 'pages/UlKit/page0';
 @import 'pages/UlKit/formElements';
+@import 'pages/UlKit/form-elements/form-elements';
 /* @import 'pages/page'; */
