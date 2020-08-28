@@ -1,8 +1,8 @@
 // JS - 
-//import './js/';
+// import './js/';
 //import './pages/page.js';
 import './pages/UlKit/form-elements/form-elements.js';
-import './lib/input/__button/mix-input_with-button__button.js';
+// import './lib/input/__button/mix-input_with-button__button.js';
 
 import $ from 'jquery';
 global.jQuery = $;

@@ -1,0 +1,48 @@
+/* @import './pages/input/_input-var_sizes'; */
+/* @import './pages/input/input'; */
+/* @import './lib/input/_mix-input_date'; */
+
+.input__layout{
+	display:flex;
+	flex-direction:row;
+	background: grey;
+/* 	width:$Input_Size_Width;
+	height:$FieldTextHeight;
+	box-sizing:border-box;
+	border-radius:$Border-radius; */
+}
+.input__layout:hover{
+	/* border-radius:$Border-radius $Border-radius 0rem 0rem; */
+}
+
+input{
+/* 	display:flex;
+	position:relative;
+	z-index:1; */
+  /* width:$Input_Size_Width; */
+	/* left:-5rem; */
+	width:100%;
+}
+/*Делаем прозрачной кнопку, открывающую календарь и поднимаем ее над новым изображением кнопки*/
+input::-webkit-calendar-picker-indicator{
+	/* display:flex; */
+	font-size:0.9rem;
+	opacity:0.1;
+	position:relative;
+	z-index:5;
+	top:0.2rem;
+	left:-0.2rem;
+	/* width:$Input_WithBottonShort_width; */
+}
+.input__icon{
+	display:flex;
+	position:relative;
+	z-index:5;
+  opacity:0.99;
+	left:-1.5rem;
+	top:0.7rem;
+	/* background:red; */
+	width:0.9rem;
+	height:0.9rem;
+	/* display:none; */
+}

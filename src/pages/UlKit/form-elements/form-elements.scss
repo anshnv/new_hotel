@@ -1,9 +1,12 @@
 @import './pages/_page-var';
 @import './pages/input/_input-var_sizes';
 @import './pages/input/input';
-/* @import './lib/input/__button/mix-input_with-button__button'; */
-@import './pages/input/input_dropdown/input_dropdown';
+@import './pages/input/input_text/input_text';
 
+@import './pages/input/input_dropdown/input_dropdown';
+@import './pages/input/input_subscription/input_subscription';
+@import './pages/input/input_masked/input_masked';
+@import './pages/input/input_date_short/input_date_short';
 .formElements{
   display:flex;
   flex-direction:column;
@@ -39,7 +42,7 @@
 
 }
 .formElements__simplElements{
-  &__fields{
+  &__inputs{
     background:grey;
   }
   &__complexButtons{
@@ -55,41 +58,56 @@
   flex-direction:column;
   justify-content:flex-start;
   
-  background:$PageBackground;
-  width:Input_Size_Width;
-}
+  /* background:$PageBackground; */
+  width:$Input_Size_Width;
+  }
 .formElements__simplElements__inputs_pad{
   pad-bottom:3rem;
 }
 .formElements__simplElements__input{
   display:flex;
   flex-direction:column;
-  justify-content:flex-start;
-  width:Input_Size_Width;
+  min-width:0;/* auto не позоляет элементу сжиматься*/
+  background:orange;
 }
-.formElements__simplElements__input{
-  &__input{
-    background:grey;
-  }
-  &__text{
-    background:red;
-  }
-  &__margin_bot{
-    margin-bottom:0.8rem;
-  }
-  }
-  /*Field data*/
 .formElements__simplElements__input_date{
   display:flex;
   flex-direction:row;
   justify-content:space-between;
-  width:$Input_WidthNotBotton_width;
-  /* background:grey; */
+  width:$Input_Size_Width;
+  /* background:blue; */
 }
-/*Новые input*/
+.formElements__simplElements__input_start
+{  display:flex;
+  flex-direction:column;
+  min-width:0;
+  align-items:flex-start;
+  background:blue;}
+.formElements__simplElements__input_end_first{
+  align-items:flex-start;
+}
+.formElements__simplElements__input_end{
+  align-items:flex-end;
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+  background:green;
+}
+.formElements__simplElements__input{
+  &__text{
+    background:green;
+  }
+  &__margin_bot{
+    margin-bottom:0.8rem;
+    /* background:red */
+  }
+  &__background{
+    background:red
+  }
+  }
+  /*Field data*/
 
 
-/*Конец Новые input*/
 .formElements__dropdowns{
   display:flex;
   flex-direction:row;

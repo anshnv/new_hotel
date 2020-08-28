@@ -17,11 +17,7 @@
 @import '../../lib/fields/calendar/calendar';
 @import '../../lib/fields/_FieldText_button_middle';
 
-/*Новые input*/
-@import '../_page-var';
 
-
-/*Конец Новые input*/
 
 .formElements{
   display:flex;
@@ -84,11 +80,12 @@
   flex-direction:column;
   justify-content:flex-start;
   width:auto;
+  background:orange;
 }
 .formElements__simplElements__field{
-  &__input{
-    background:grey;
-  }
+  /* &__input{ */
+    /* background:grey; */
+  /* } */
   &__text{
     background:red;
   }
@@ -101,8 +98,8 @@
   display:flex;
   flex-direction:row;
   justify-content:space-between;
-  width:$Input_WidthNotBotton_width;
-  /* background:grey; */
+  width:auto;
+  background:blue;
 }
 
 .formElements__dropdowns{
@@ -112,6 +109,7 @@
   background:grey;/* $PageBackground; */
   width:57.9rem;
   height:14.05rem;
+  
   }
   .formElements__dropdown{
   /* display:flex;

@@ -12,23 +12,53 @@
           include ../../input/input_text/input__text_text
           include ../../input/input_text/input_text
           
-        .formElements__simplElements__field.formElements__simplElements__field__margin_bot
+          
+        .formElements__simplElements__input.formElements__simplElements__input__margin_bot
           include ../../input/input_text/input__text_text_focused
           include ../../input/input_text/input_text_focused
           
           
         <!-- Текстовое поле конец -->
-        <!-- dropdowns начало -->
+        <!-- Текстовое поле с кнопкой dropdown начало -->
+        
         .formElements__simplElements__input.formElements__simplElements__input__margin_bot
           include ../../input/input_dropdown/input__text_dropdown
           include ../../input/input_dropdown/input_dropdown
-          <!-- Проба -->
+          
+        <!-- Текстовое поле с кнопкой dropdown конец -->
+        
 
+        <!-- Поле Masked начало -->
+        .formElements__simplElements__input.formElements__simplElements__input__margin_bot
+          include ../../input/input_masked/input__text_masked
+          include ../../input/input_masked/input_masked
+        <!-- Поле Masked конец -->
           
+
+        <!-- Поле date Dropdown начало -->
+        .formElements__simplElements__input_date
+          formElements__simplElements__input.formElements__simplElements__input__margin_bot
+            
+            include ../../input/input_date_short/input__text_date_short
+            include ../../input/input_date_short/input_date_short
+            
+          .formElements__simplElements__input.formElements__simplElements__input__margin_bot
+            include ../../input/input_date_short/input__text_date_short
+            .formElements__simplElements__input_end
+              include ../../input/input_date_short/input_date_short 
           
-        <!-- dropdowns конец -->
+          <!-- Поле date Dropdown конец -->
         
+        <!--FILTER DATE DROPDOWN начало-->
         
+        <!--FILTER DATE DROPDOWN конец-->
+        
+        <!-- SUBSCRIPTION TEXT FIELD начало -->
+        .formElements__simplElements__input.formElements__simplElements__input__margin_bot
+          include ../../input/input_subscription/input__text_subscription
+          include ../../input/input_subscription/input_subscription
+        <!-- SUBSCRIPTION TEXT FIELD конец -->
+
       .formElements__simplElements__complexButtons
         p complexButtons
       .formElements__simplElements__buttonsAnd

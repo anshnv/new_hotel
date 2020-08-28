@@ -1,0 +1,55 @@
+
+@import '../_input-var_sizes';
+@import '../input';
+
+
+.input-text_subscription__layout{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  /* width:$Input_WithBotton_Size_Middle_Width+$Input__Button_Size; */
+}
+/* .__layout_submit{
+  width:$Input_WithBotton_Size_Middle_Width;
+} */
+.__layout_email{
+  width:$Input_WithBotton_Size_Middle_Width+$Input__Button_Size;
+}
+
+/* input[type=submit]{
+  position: relative;
+  background-color:$PageBackground;
+  box-sizing:border-box;
+  background-position:right center;
+  background:url(/img/arrow_forward-24px.svg) no-repeat 95% center;
+} */
+
+
+input[type='email']:invalid {
+  border: 2px solid red;
+}
+input[type='email']:valid {
+  color: $DarkShade75;
+  /* border: 1px solid $DarkShade50; */
+}
+input[type='email']:focus{
+  border: 1px solid $DarkShade50;
+}
+
+button[name='input-text_Email__button'] {
+  position:relative;
+  width:$Input__Button_Size;
+  height:$Input__Button_Size;
+  /*color:$DarkShade25; /*цвет шрифта в обычном состоянии*/
+  /*border: 1px solid $DarkShade25;*/
+  border:0px;
+  background-color:$PageBackground;
+  box-sizing:border-box;
+  left:-12%;
+  background:url(/img/arrow_forward-24px.svg) no-repeat;
+}
+button[name='input-text_Email__button']:focus{
+
+  outline:0px;
+}
+

@@ -1,0 +1,21 @@
+
+.input-text_with-button__layout{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  width:auto;
+  background:grey;
+}
+
+
+.input-text__icon{
+  /* display:flex; */
+  position:relative;
+  z-index:5;
+  /* opacity:1; */
+  left:-10%;
+  background:blue;
+  height:62%;
+  /* min-width:0rem; */
+}
+

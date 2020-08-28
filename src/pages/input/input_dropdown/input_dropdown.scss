@@ -1,17 +1,33 @@
 @import '../_input-var_sizes';
 @import '../input';
-@import './lib/input/_with-button/_mix-input_with-button';
 
-input[name='with-button']{
-  width:$Input_Size_Width;
-  /* background:yellow; */
+.input-text_dropdown__layout{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  width:$Input_Size_Width+$Input__Button_Size;
+  background:grey;
 }
-.input_with-button__layout{
+.input-text_dropdown_width{
   width:$Input_Size_Width;
 }
-.input_with-button{
-  width:$Input_Size_Width;
+button[name='input-text_dropdown'] {
+  position:relative;
+  width:$Input__Button_Size;
+  height:$Input__Button_Size;
+  /*color:$DarkShade25; /*цвет шрифта в обычном состоянии*/
+  /*border: 1px solid $DarkShade25;*/
+  border:0px;
+  background-color:$PageBackground;
+  box-sizing:border-box;
+  left:-10%;
+  background:url(/img/expand_more-24px.svg) no-repeat;
 }
-/* .input__icon{
-  height:1.3rem;
-} */
+
+button[name='input-text_dropdown']:focus{
+  /*color: $DarkShade25;
+  border: 1px solid $DarkShade50;*/
+  outline:0px;
+}
+
+

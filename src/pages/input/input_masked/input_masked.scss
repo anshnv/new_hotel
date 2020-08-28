@@ -1,0 +1,10 @@
+@import '../_input-var_sizes';
+@import '../input';
+
+input[type='text']::placeholder{
+  text-transform:uppercase;
+}
+.input_text{
+
+  width:$Input_Size_Width;
+}

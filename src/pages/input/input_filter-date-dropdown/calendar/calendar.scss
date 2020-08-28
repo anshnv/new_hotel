@@ -1,0 +1,40 @@
+@import '../_var_field-sizes';
+@import '../_Input';
+
+.field-calendar__layout{
+  /* display:flex; */
+  flex-direction:row;
+  /* background: green; */
+  width:$Input_WithBottonMiddle_width;
+  box-sizing:border-box;
+  border-radius:$Border-radius;
+  border:1px solid $DarkShade25;
+  
+  }
+  
+  .input-calendar{
+  display:flex;
+  border-radius:$Border-radius 0 0 $Border-radius;
+}
+
+.field-calendar__expand_more{
+  display:flex;
+  position:relative;
+  z-index:0;
+/*   left:-1.6rem;
+  top:0.6rem; */
+  background:blue;
+  border-radius:0 $Border-radius $Border-radius 0 ;
+  /* width:100%  ;
+  height:100%; */
+  /* display:none; */
+}
+/* Оформление air-datepicker */
+.datepicker-here{
+  width:calc(13.2rem - 0.2rem);
+  /* $Input_WithBottonMiddle_width:13.2rem; */
+  border:0px;
+  color:$DarkShade50;
+  cursor: default;
+  /* background:yellow; */
+}

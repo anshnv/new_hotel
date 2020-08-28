@@ -22,33 +22,48 @@ module.exports = {
   },
   entry: {
     page: PATHS.src
-		//page: `${PATHS.src}/index.js`,
-		//pg: `${PATHS.src}/pages/page.js`,
-		
+    //page: `${PATHS.src}/index.js`,
+    //pg: `${PATHS.src}/pages/page.js`,
+    
   },
   output: {
     filename: `${PATHS.assets}js/[name].js`,
     path: PATHS.dist,
     //publicPath: '/'
   },
-	
-	module: {
+  
+  module: {
     rules: [
-		{
+    {
       test: /\.js$/,
-			exclude: '/node_modules/',
-			use:{loader: 'babel-loader'}
-		},
-		{
-      test: /\.(png|jpg|gif|svg|woff|woff2|eot|ttf)$/,
+      exclude: '/node_modules/',
+      use:{loader: 'babel-loader'}
+    },
+    {
+      test: /\.(svg|woff|woff2|eot|ttf)$/,
       loader: 'file-loader',
       options: {
-			//outputPath: `${PATHS.src}img`,
-			//outputPath: `${PATHS.src}fonts`,
-			name: '[name].[ext]'
+      //outputPath: `${PATHS.src}img`,
+      // outputPath: `${PATHS.src}fonts`,
+      // name: '/img/[name].[ext]',
+      name: '/fonts/[name].[ext]'
+      // name: '[`${PATHS.assets}img`][name].[ext]'
+      // name: '[path][name].[ext]',
       }
     },
-		{
+    {
+      test: /\.(png|jpg|gif)$/,
+      loader: 'file-loader',
+      options: {
+      //outputPath: `${PATHS.src}img`,
+      // outputPath: `${PATHS.src}fonts`,
+      name: '/img/[name].[ext]',
+      // name: '[name].[ext]'
+      // name: '[`${PATHS.assets}img`][name].[ext]'
+      // name: '[path][name].[ext]',
+      }
+    },
+    {
       test: /\.scss$/,
       use: [
         'style-loader',
@@ -57,26 +72,26 @@ module.exports = {
           loader: 'css-loader',
           options: { sourceMap: true }
         }
-				,
-				{
+        ,
+        {
           loader: 'postcss-loader',
           options: { sourceMap: true,
-											config: { path:`${PATHS.src}/js/postcss.config.js`},
-											plugins: ()=>[autoprefixer()]
-										}
-					}
-				,
-				{
+                      config: { path:`${PATHS.src}/js/postcss.config.js`},
+                      plugins: ()=>[autoprefixer()]
+                    }
+          }
+        ,
+        {
           loader: 'sass-loader',
           options: { sourceMap: true,
-						sassOptions: {
-							includePaths: ['./node_modules']
-						}
-					}
+            sassOptions: {
+              includePaths: ['./node_modules']
+            }
+          }
         }
       ]
     },
-		{
+    {
       test: /\.css$/,
       use: [
         'style-loader',
@@ -85,43 +100,43 @@ module.exports = {
           loader: 'css-loader',
           options: { sourceMap: true }
         }
-				,
-				{
+        ,
+        {
           loader: 'postcss-loader',
           options: { sourceMap: true, config: { path: `${PATHS.src}/js/postcss.config.js` }}
         }
       ]
-	  
+    
     },
-	{
-		test: /\.pug$/,
-		use: [
-			'html-loader?attrs=false',
-			{loader:'pug-html-loader',
-			options: {pretty: true}}
-			]
-	}
-	
+  {
+    test: /\.pug$/,
+    use: [
+      'html-loader?attrs=false',
+      {loader:'pug-html-loader',
+      options: {pretty: true}}
+      ]
+  }
+  
 ]
 },
  plugins:[
-	 
-	 new MiniCssExtractPlugin({
+   
+   new MiniCssExtractPlugin({
       filename: `${PATHS.assets}css/[name].css`,
-	  }),
-		new HtmlWebpackPlugin({
+    }),
+    new HtmlWebpackPlugin({
       hash: false,
       template: `${PATHS.src}/index.html`,
-			filename: './index.html',
-			template:	`${PATHS.src}/index.pug`,
+      filename: './index.html',
+      template: `${PATHS.src}/index.pug`,
       filename: 'index.html'
     }),
-		new webpack.ProvidePlugin({
+    new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
       //'window.jQuery': 'jquery',
-			//'window.$': 'jquery'
+      //'window.$': 'jquery'
     }),
-		
+    
  ]
 }

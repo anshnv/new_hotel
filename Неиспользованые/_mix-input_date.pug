@@ -1,0 +1,5 @@
+mixin input-text(ftype, fname, fplaceholder, fpattern, ffail)
+  .input__layout
+    input(type=ftype name=fname  placeholder=fplaceholder pattern=fpattern)
+    .input__icon 
+      object(type='image/svg+xml' data=ffail)

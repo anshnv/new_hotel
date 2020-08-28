@@ -1,0 +1,11 @@
+@import '../_input-var_sizes.scss';
+@import '../_mix-input__text.scss';
+.input_date_short{
+  width:$Input_WithBotton_Size_Short_Width;
+}
+input[name='WithBottonShort']::-webkit-calendar-picker-indicator {
+
+  background: url(/img/arrow_forward-24px.svg) no-repeat;/*изображение берется из dist/img*/
+  width: 0.9rem;
+  height: 0.9rem;
+}

@@ -13,3 +13,6 @@ $(document).ready( function() {
 
 
 });
+
+import '../../input/input_dropdown/input_dropdown.js';
+import '../../input/input_subscription/input_subscription.js';
