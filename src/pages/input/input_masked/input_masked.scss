@@ -1,7 +1,7 @@
 @import '../_input-var_sizes';
 @import '../input';
 
-input[type='text']::placeholder{
+input[name='masked-text']::placeholder{
   text-transform:uppercase;
 }
 .input_text{

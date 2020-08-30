@@ -1,0 +1,23 @@
+@import '../../_var_colors';
+@import '../_input-var_sizes';
+@import '../input';
+
+
+/* Оформление air-datepicker */
+.datepicker-here{
+  box-sizing:border-box;
+  border-radius:$Border-radius;
+  border:1px solid $DarkShade25;
+  width:$Input_WithBotton_Size_Middle_Width;
+  color:$DarkShade50;
+  cursor: default;
+  background:url(/img/expand_more-24px.svg) no-repeat;
+  background-position:96% 50%;
+  background-color:$PageBackground;
+}
+.datepicker-here:focus{
+  border:1px solid $DarkShade50;;
+}
+.datepicker-here:hover{
+  border:1px solid $DarkShade50;;
+}

@@ -4,9 +4,11 @@
 @import './pages/input/input_text/input_text';
 
 @import './pages/input/input_dropdown/input_dropdown';
-@import './pages/input/input_subscription/input_subscription';
+
 @import './pages/input/input_masked/input_masked';
 @import './pages/input/input_date_short/input_date_short';
+@import './pages/input/input_filter-date-dropdown/input_filter-date-dropdown';
+@import './pages/input/input_subscription/input_subscription';
 .formElements{
   display:flex;
   flex-direction:column;
@@ -68,13 +70,13 @@
   display:flex;
   flex-direction:column;
   min-width:0;/* auto не позоляет элементу сжиматься*/
-  background:orange;
+  /* background:orange; */
 }
 .formElements__simplElements__input_date{
   display:flex;
   flex-direction:row;
   justify-content:space-between;
-  width:$Input_Size_Width;
+  max-width:$Input_Size_Width;
   /* background:blue; */
 }
 .formElements__simplElements__input_start
