@@ -5,7 +5,10 @@
 }
 input[name='WithBottonShort']::-webkit-calendar-picker-indicator {
 
-  background: url(/img/arrow_forward-24px.svg) no-repeat;/*изображение берется из dist/img*/
-  width: 0.9rem;
-  height: 0.9rem;
+  background: url(/img/expand_more-24px.svg) no-repeat;/*изображение берется из dist/img*/
+  text-transform:uppercase;
+  padding-right:0.8rem;
+  /* background-position:50% 50%; */
+/*   width: 0.9rem;
+  height: 0.9rem; */
 }
