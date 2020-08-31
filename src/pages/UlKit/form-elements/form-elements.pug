@@ -66,8 +66,25 @@
         p complexButtons
       .formElements__simplElements__buttonsAnd
         p buttonsAnd
+        
+        <!-- dropdowns начало -->
     .formElements__dropdowns
-      p dropdowns
+      .formElements__dropdown
+        .input__text_dropdownR_s
+          include item-quantity-dropdownR/_input__text_dropdownR
+        .formElements__dropdowns_R__magR
+          include ../../../lib/item-quantity-dropdownRoom/item-quantity-dropdownRoom
+      
+      .formElements__dropdown
+        .input__text_dropdownG_s
+          include item-quantity-dropdownG/_input__text_dropdownG
+        include ../../../lib/item-quantity-dropdownGuest/item-quantity-dropdownGuest
+      .formElements__dropdown
+        .input__text_dropdownG_s
+          include item-quantity-dropdownG/_input__text_dropdownG
+        include ../../../lib/item-quantity-dropdownGuest/item-quantity-dropdownGuest
+        <!-- dropdowns конец -->
+        
     .formElements__lists
       p lists
     .formElements__elementsIcon

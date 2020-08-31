@@ -1,0 +1,22 @@
+@import './lib/_styleText';
+@import './lib/_var_colors';
+/* @import '_input-var_sizes'; */
+
+
+.layoutText{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  justify-content:space-between;
+  min-width:0;
+  width:auto;
+}
+
+.Text_fields_def50{
+  color:$DarkShade50;
+  text-transform:uppercase;
+}
+.Text_fields_def75{
+  color:$DarkShade75;
+  text-transform:uppercase;
+}

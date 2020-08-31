@@ -2,7 +2,7 @@
 // import './js/';
 //import './pages/page.js';
 import './pages/UlKit/form-elements/form-elements.js';
-// import './lib/input/__button/mix-input_with-button__button.js';
+
 
 import $ from 'jquery';
 global.jQuery = $;
@@ -20,10 +20,10 @@ import './index.scss';
 //$('#id').slider();
 
 // Выпадающее меню со счетчиком 
-import './lib/fields/item-quantity-dropdownRoom/item-quantity-dropdownRoom.js';
-import './lib/fields/item-quantity-dropdownGuest/item-quantity-dropdownGuest.js';
+import './lib/item-quantity-dropdownRoom/item-quantity-dropdownRoom.js';
+import './lib/item-quantity-dropdownGuest/item-quantity-dropdownGuest.js';
 
-import './lib/fields/calendar/calendar.js';
+
 ;
 // Узнаем размер шрифта браузера
 /* Для свойств, названия которых состоят из нескольких слов, используется вотТакаяЗапись:

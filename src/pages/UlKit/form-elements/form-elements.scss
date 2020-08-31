@@ -2,6 +2,7 @@
 @import './pages/input/_input-var_sizes';
 @import './pages/input/input';
 @import './pages/input/input_text/input_text';
+@import './pages/_mixPageIconPad';
 
 @import './pages/input/input_dropdown/input_dropdown';
 
@@ -9,6 +10,10 @@
 @import './pages/input/input_date_short/input_date_short';
 @import './pages/input/input_filter-date-dropdown/input_filter-date-dropdown';
 @import './pages/input/input_subscription/input_subscription';
+@import './lib/item-quantity-dropdownGuest/item-quantity-dropdownGuest';
+@import './lib/item-quantity-dropdownRoom/item-quantity-dropdownRoom';
+@import 'item-quantity-dropdownR/_input__text_dropdownR';
+@import 'item-quantity-dropdownG/_input__text_dropdownG';
 .formElements{
   display:flex;
   flex-direction:column;

@@ -1,4 +1,3 @@
-
 @import '../_input-var_sizes';
 @import '../input';
 
@@ -7,6 +6,7 @@
   display:flex;
   flex-direction:row;
   align-items:center;
+  background:red;
 }
 
 .__layout_email{
