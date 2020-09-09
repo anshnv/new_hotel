@@ -13,7 +13,6 @@ $(document).ready( function() {
 
 
 });
-
-import '../../input/input_dropdown/input_dropdown.js';
-import '../../input/input_subscription/input_subscription.js';
-import '../../input/input_filter-date-dropdown/input_filter-date-dropdown.js';
+import '../../../lib/input/input_filter-date-dropdown/input_filter-date-dropdown.js';
+import '../../../lib/input/input_dropdown/input_dropdown.js';
+import '../../../lib/input/input_subscription/input_subscription.js';

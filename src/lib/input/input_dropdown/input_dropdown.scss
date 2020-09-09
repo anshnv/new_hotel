@@ -1,0 +1,17 @@
+@import '../_input-var_sizes';
+@import '../input';
+@import '../input__button';
+
+.input-text_dropdown__layout{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  width:100%+6%;
+  background:red;
+}
+.input-text_dropdown_width{
+  width:$Input_Size_Width;
+}
+/* $button_background:url(/img/expand_more-24px.svg); */
+@include input__button(-10%, url(/img/expand_more-24px.svg), dropdown);
+

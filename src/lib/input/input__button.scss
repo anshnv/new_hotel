@@ -1,0 +1,17 @@
+@mixin input__button($position-left, $button_background, $button__name){
+  button[name='input_#{$button__name}'] {
+    position:relative;
+    width:$Input__Button_Size;
+    height:$Input__Button_Size;
+    border:0px;
+    background-color:$PageBackground;
+    box-sizing:border-box;
+    left:$position-left;
+    background:$button_background no-repeat;
+  }
+  button[name='input_#{$button__name}']:focus{
+
+  outline:0px;
+}
+}
+

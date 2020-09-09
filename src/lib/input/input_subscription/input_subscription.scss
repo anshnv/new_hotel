@@ -1,6 +1,6 @@
 @import '../_input-var_sizes';
 @import '../input';
-
+@import '../input__button';
 
 .input-text_subscription__layout{
   display:flex;
@@ -22,8 +22,9 @@ input[type='email']:valid {
 input[type='email']:focus{
   border: 1px solid $DarkShade50;
 }
-
-button[name='input-text_Email__button'] {
+/* $button_background:url(/img/arrow_forward-24px.svg); */
+@include input__button(-12%, url(/img/arrow_forward-24px.svg), email);
+/* button[name='input_with-button'] {
   position:relative;
   width:$Input__Button_Size;
   height:$Input__Button_Size;
@@ -36,4 +37,4 @@ button[name='input-text_Email__button'] {
 button[name='input-text_Email__button']:focus{
   outline:0px;
 }
-
+ */
